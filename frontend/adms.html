@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel Administrativo - SEDEL</title>
+  <link rel="icon" type="image/jpeg" href="assets/images/sedel.jpg" />
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body>
+  <header class="admin-header">
+    <div>
+      <h1>Chamados SEDEL</h1>
+      <p>Painel de acompanhamento dos atendimentos de TI</p>
+    </div>
+    <nav>
+      <a href="index.html">Chat</a>
+      <a href="/api/chamados/exportar">Exportar CSV</a>
+    </nav>
+  </header>
+
+  <main class="admin-main">
+    <section class="metrics">
+      <div><strong id="totalChamados">0</strong><span>Total</span></div>
+      <div><strong id="pendentesChamados">0</strong><span>Pendentes</span></div>
+      <div><strong id="niveisChamados">0</strong><span>Niveis</span></div>
+    </section>
+
+    <section class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Numero</th>
+            <th>Solicitante</th>
+            <th>Setor</th>
+            <th>Nivel</th>
+            <th>Status</th>
+            <th>Abertura</th>
+            <th>Descricao</th>
+          </tr>
+        </thead>
+        <tbody id="chamadosTabela">
+          <tr><td colspan="7">Carregando chamados...</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

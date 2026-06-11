@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suporte TI - SEDEL</title>
+  <link rel="icon" type="image/jpeg" href="assets/images/sedel.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <div class="topo-gov">
+    <div class="topo-faixa-verde"></div>
+    <div class="topo-faixa-amarelo"></div>
+    <div class="topo-faixa-azul"></div>
+  </div>
+
+  <main class="card">
+    <header class="header">
+      <img src="assets/images/sedel.jpg" alt="Logo SEDEL" class="header-logo" />
+      <div class="header-divider"></div>
+      <div class="header-info">
+        <h1>Suporte de TI</h1>
+        <p><span class="status-dot"></span> Assistente Virtual Online</p>
+      </div>
+      <a class="admin-link" href="adms.html" title="Painel administrativo">ADM</a>
+      <button class="btn-novo" type="button" onclick="resetarConversa()">NOVO</button>
+    </header>
+
+    <div class="tricolor"><span></span><span></span><span></span></div>
+    <section class="chat-area" id="chatArea" aria-live="polite"></section>
+    <section class="opcoes-area" id="opcoesArea"></section>
+
+    <form class="input-area" onsubmit="enviarMensagem(event)">
+      <textarea id="inputMensagem" placeholder="Digite sua mensagem..." rows="1" oninput="autoResize(this)"></textarea>
+      <button class="send-btn" id="sendBtn" type="submit" title="Enviar">➤</button>
+    </form>
+
+    <footer class="footer">Secretaria de Estado de Desporto e Lazer - SEDEL · AM</footer>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/chat.js"></script>
+</body>
+</html>
