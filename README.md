@@ -17,4 +17,4 @@ O servidor inicia em `http://localhost:3000` por padrão. A interface fica no ar
 
 ## Estado do projeto
 
-Este é um experimento acadêmico, sem autenticação na API de exportação e sem preparação para uso com dados reais. Um arquivo SQLite já esteve versionado e permanece no histórico do Git; não use os dados antigos. `node_modules` também foi versionado e ainda está no histórico e no ramo atual: instale dependências com `npm install`. Para mudanças e autoria, consulte o projeto original e o histórico deste fork.
+Este é um experimento acadêmico, sem autenticação na API de exportação e sem preparação para uso com dados reais. Um arquivo SQLite já esteve versionado e permanece no histórico do Git; não use os dados antigos. `node_modules` também já foi versionado e permanece no histórico; o ramo atual o ignora. Instale dependências com `npm install`. Para mudanças e autoria, consulte o projeto original e o histórico deste fork.
